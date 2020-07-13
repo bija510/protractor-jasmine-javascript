@@ -16,7 +16,7 @@ describe('Element', function(){
 
 	 using(d.dataDriven, function (data, description) {
 		 
-		 it('Testing calculator functionality', function() { //this is the Business logic
+		 it('Testing calculator functionality' + ':-' +description , function() { //this is the Business logic
 		        
 				PB.firstInput.sendKeys(data.firstInput);
 				PB.secondInput.sendKeys(data.secondInput);
