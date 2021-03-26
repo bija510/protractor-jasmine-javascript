@@ -30,3 +30,9 @@ module.exports.gender=
 			gend1:"male",
 			gend2:"female"
   		}
+
+module.exports.dataDrive ={
+		firstInput : "10",
+		secondInput : "20",
+		result : "30"
+}
