@@ -2,7 +2,7 @@
  * 
  *********************************************************/
 describe('Element', function(){
-	var PB = require("./CalculatorPage.js")
+	var PB = require("../Pages/CalculatorPage.js")
 	
 	it('allJS-Locators',function(){
 		PB.openURL();

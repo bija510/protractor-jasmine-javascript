@@ -3,8 +3,8 @@
  * tearDown = afterEach ===> AfterTest(in java)
  *********************************************************/
 describe('Element', function(){
-	var PB = require("./CalculatorPage.js");
-    var d = require("./Data.js"); //d.dataDrive.firstInput
+	var PB = require("../Pages/CalculatorPage.js");
+    var d = require("../Data/Data.js"); //d.dataDrive.firstInput
 		
 	beforeEach(function() { //setUP this is pre-requestics or loading
 		PB.openURL();

@@ -1,7 +1,9 @@
+
 var Jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter');
 exports.config = {
   
-  specs: ['Page Object Model(POM-P)//spec_parameterization.js'],
+  specs: ['Spec File//Spec_SetupTeardown2.js'],
+  
 
   onPrepare :function()
   { 
@@ -16,12 +18,12 @@ exports.config = {
   suites :
   {
        Smoke : [
-		    	   'Page Object Model(POM-P)//Script_PageObject.js',
-		    	   'Page Object Model(POM-P)//SetUP_TearDown.js',
-		    	   'Page Object Model(POM-P)//spec_parameterization.js'
+		    	   'Spec File//Spec_Calculator.js',
+		    	   'Spec File//spec_parameterization.js',
+		    	   'Spec File/Spec_SetupTeardown.js'
     	       ],  
        
-       Regression : 'Page Object Model(POM-P)//spec_19_FileUpload.js'	 
+       Regression : 'Spec File/spec_08_Dropdown.js'	 
 		   
   }, 
 	jasmineNodeOpts: {

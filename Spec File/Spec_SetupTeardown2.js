@@ -3,7 +3,7 @@
  * tearDown = afterEach ===> AfterTest(in java)
  *********************************************************/
 describe('Element', function(){
-	var PB = require("./Calculator2Page.js")
+	var PB = require("../Pages/Calculator2Page.js")
 
 		
 	beforeEach(function() { //setUP this is pre-requestics or loading
@@ -12,15 +12,15 @@ describe('Element', function(){
 
 	it('Testing calculator functionality', function() { //this is the Business logic
 
-		PB.firstInput.sendKeys("2");
-		PB.secondInput.sendKeys("8");
+		PB.firstInput.sendKeys("19");
+		PB.secondInput.sendKeys("1");
 		PB.goButton.click();
 
 		PB.result.getText().then(function(textResult)
 		//$(".ng-binding").getText().then(function(textResult) //we can use this just for the Css
 		{
 			console.log("Result total is==> " + textResult);
-			expect(textResult).toBe("10");
+			expect(textResult).toBe("20");
 		})
 
 	})

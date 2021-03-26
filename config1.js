@@ -1,6 +1,6 @@
 exports.config = {
   //seleniumAddress: 'http://localhost:4444/wd/hub', //even we don't have to start server.it will run but some problem & not running in Firefox and IE
-  specs: ['JS_Protractor_Selenium//spec_01_Start_UP.js'],
+  specs: ['protractor_javascript//spec_01_Start_UP.js'],
 
   capabilities: {
 

@@ -1,14 +1,16 @@
-/**
- * 
- */
+/************************************************************************************************
+ * issue with npm file not found fix==> just run this in eclipse terminal after cd project path 
+ * npm config set script-shell "C:\\Program Files\\git\\bin\\bash.exe"
+ * this will fix the issue
+ ************************************************************************************************/
 
 /**********************************************************
  * setup method  beforeEach===>  BeforeTest(in java)
  * tearDown = afterEach ===> AfterTest(in java)
  *********************************************************/
 describe('Element', function(){
-	var PB = require("./PageObjects.js");
-    var d = require("./Data_Param.js"); //d.dataDrive.firstInput
+	var PB = require("../Pages/Calculator2Page.js");
+    var d = require("../Data/Data_Param.js"); //d.dataDrive.firstInput
     var using = require('jasmine-data-provider');
 	beforeEach(function() { //setUP this is pre-requestics or loading
 		PB.openURL();

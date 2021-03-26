@@ -3,7 +3,7 @@
 
 exports.config = {
   
-  specs: ['E-commerce//spec_protoCommerce.js'] // can use single / or double slice //
+  specs: ['Spec File//spec_19_FileUpload.js'] // can use single / or double slice //
 }
 
 //To run in terminal==> cd project path ==> protractor config.js 
