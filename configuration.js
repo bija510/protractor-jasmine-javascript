@@ -15,7 +15,12 @@ exports.config = {
  
   suites :
   {
-       Smoke : ['Page Object Model(POM-P)//Script_PageObject.js','Page Object Model(POM-P)//SetUP_TearDown.js'],  
+       Smoke : [
+		    	   'Page Object Model(POM-P)//Script_PageObject.js',
+		    	   'Page Object Model(POM-P)//SetUP_TearDown.js',
+		    	   'Page Object Model(POM-P)//spec_parameterization.js'
+    	       ],  
+       
        Regression : 'Page Object Model(POM-P)//spec_19_FileUpload.js'	 
 		   
   }, 
@@ -25,8 +30,8 @@ exports.config = {
   
 };
 
-
-//make sure you do npm install if you update any in json file
+//npm run webdriver-update
+//npm install will update all if you update any in json file
 //npm run protractor 
 //npm run smokeSuite
 //npm run regressionSuite
